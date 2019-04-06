@@ -1,0 +1,81 @@
+{% extends 'liberary/base.html' %}
+
+{% block body %}
+
+ <div class="container item's_page">
+        <div class="row">
+            <div class="col-md-3 image">
+                <img src="harrypotter_1.jpeg" style="width: 100%; padding: 20px;">
+            </div>
+
+            <div class="col-md-6 discription" style="border-right: 1px solid #E5E5E3;">
+                <h3 style="margin-top: 0; font-weight:bold;">{{book.book_title}}<span style="color: #575757; font-size: 17px; font-weight: normal;">Paperback</span></h3>
+                <span>by &nbsp;</span><a href="#">{{ book.author }}</a><span>(Author)</span><hr>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <p style="font-weight: bold; color: #878787;">Author</p>
+                    </div>
+                    <div class="col-md-9" >
+                        <a href="#">{{Author}}</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <p style="font-weight: bold; color: #878787;">Highlights</p>
+                    </div>
+                    <div class="col-md-9" style="padding-left: 0;">
+                        <ul>
+                            <li>Language : {{book.language_id}}</li>
+                            <li>Binding : Paperback</li>
+                            <li>Genre: {{book.category_id}}</li>
+                            <li>ISBN: {{book.ISBN}}</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <p style="font-weight: bold; color: #878787;">Discription</p>
+                    </div>
+                    <div class="col-md-9">
+                        <p>Harry Potter and the Philosopher’s Stone is the first novel of the much appreciated Harry Potter series. An abridged version of the same novel, this book has been brought out by Bloomsbury Press for children aged between eight and twelve years.</p>
+
+                        <details><summary style="color: #204F87;">Read more</summary><p>The story unfolds with a letter arriving for Harry Potter, a simple boy, thatbrings with it a dark secret. The letter reveals to Harry Potter that both his parents were wizards and were killed by a Dark Lord’s curse when he was just a baby.</p>
+
+<p>Thereafter Potter's journey to the Hogwarts, a school of wizards brimming with magic, mystery and enchantment, spins out into a fascinating tale. After his journey to Hogwarts, young Harry learns of a missing stone — a stone which can be both terrifying and valuable at the same time, depending on who possesses it and how one uses it. Will Harry Potter and his friends be able to get hold of the stone is how the story unfolds from here on?</p>
+
+<p>It is here Harry Potter’s long journey spread over 7 books really begins. In simple words and rich prose, this children’s edition rightly captures the essence of the Harry Potter’s first novel and promises to take the children on an enchanting ride to the magical world order.</p>
+
+                        <br><p style="font-weight: bold;">About the author:</p>
+<p>J.K. Rowling: One of the most celebrated authors of contemporary times, JK Rowling is the author of the bestselling fantasy Harry Potter series, a collection of 7 books that have been published between 1997 and 2007. These popular books by her have been translated into 79 languages, with the collective series having registered a combined sale of over 450 million copies worldwide. Apart from the Harry Potter series, Rowling has also written three companion volumes for charity and crime novels as well.</p></details>
+                    </div>
+                </div>
+            </div>
+
+        <div class="col-md-3" style="padding: 15px; ">
+            <div class="share" style="text-align: center;">
+                <a href="#" style="padding: 5px;"><i class="fa fa-share" aria-hidden="true"></i>Share</a>
+                <a href="#" style="padding: 5px;"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                <a href="#" style="padding: 5px;"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a href="#" style="padding: 5px;"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#" style="padding: 5px;"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+            </div>
+            <div class="availablity" style="border: 5px solid #E5E5E3; border-radius: 10px; padding: 10px; margin-top: 20px; ">
+                <h3 style="color: #575757;">Offline : <span style="color: #038B03;">{{book.no_of_copies_available_offline}}</span></h3>
+                <button type="btn" class="btn btn-warning btn-lg" style="width: 100%; font-weight: bold;">Book in Advance</button>
+                <h3 style="color: #575757; margin-top: 25px;">Online : <span style="color: #C9302C;">
+                    {% if book.online %}
+                        <span style="color: GREEN;">Available</span>
+                    {% else %}
+                        <span style="color:RED;">Not Available</span>
+                    {% endif %}
+                </span></h3>
+                <button type="btn" class="btn btn-warning btn-lg" disabled style="width: 100%; font-weight: bold; ">Download</button>
+                <h4 style="color: #575757;">Format : <span style="color: #337AB7">PDF</span></h4>
+                <a href="#">Add to wish list</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+{% endblock %}

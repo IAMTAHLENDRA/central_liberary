@@ -1,0 +1,14 @@
+{% extends 'liberary/base.html' %}
+
+{% block body %}
+
+<h1>Profile</h1>
+
+<h2>Login</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Login</button>
+  </form>
+
+{% endblock %}

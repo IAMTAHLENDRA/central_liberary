@@ -1,0 +1,9 @@
+
+vpython:S101D"SRename class "Category_Table" to match the regular expression ^[A-Z_][a-zA-Z0-9]+$.(ºÓ´şüÿÿÿÿ8è‚ï‡-
+vpython:S101"SRename class "Student_Detail" to match the regular expression ^[A-Z_][a-zA-Z0-9]+$.(Ã·…Öøÿÿÿÿ8è‚ï‡-
+tpython:S101="QRename class "Shelf_Detail" to match the regular expression ^[A-Z_][a-zA-Z0-9]+$.(áÂÅ•üÿÿÿÿ8è‚ï‡-
+Bpython:S125"Remove this commented out code.(ÑÑäÿùÿÿÿÿ8óîñú‰-
+wpython:S101f"TRename class "Borrower_Detail" to match the regular expression ^[A-Z_][a-zA-Z0-9]+$.(´ãÌŸùÿÿÿÿ8è‚ï‡-
+spython:S101R"PRename class "Book_Detail" to match the regular expression ^[A-Z_][a-zA-Z0-9]+$.(·¿´™şÿÿÿÿ8è‚ï‡-
+qpython:S101K"SRename class "Language_Table" to match the regular expression ^[A-Z_][a-zA-Z0-9]+$.(”¬¾8è‚ï‡-
+opython:S101	"QRename class "Staff_Detail" to match the regular expression ^[A-Z_][a-zA-Z0-9]+$.(ÑÂ‰Ü8Ö‘Šà…-
